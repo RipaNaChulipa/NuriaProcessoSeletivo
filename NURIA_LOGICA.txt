@@ -1,0 +1,69 @@
+
+Logica
+1)
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int numero1;
+    int numero2;
+    int square;
+    double raiz;
+    
+    
+    printf("Insira o primeiro número: ");
+    scanf("%d", &numero1);
+    printf("Insira o segundo numero:  ");
+    scanf("%d", &numero2);
+    
+    
+    if(numero1 < numero2)
+    {
+        
+        square = numero1 * numero1;
+        raiz = sqrt(numero2);
+        
+        printf("O quadrado do numero 1 é: %d\nA raiz quadrada do numero 2 é: %f", square, raiz);
+        
+    }
+    
+    else if(numero1 > numero2 ){
+        square= numero2 * numero2;
+        raiz = sqrt(numero1);
+         printf("O quadrado do numero 2 é: %d\nA raiz quadrada do numero 1 é: %f", square, raiz);
+    }
+    
+    
+    
+
+    return 0;
+}
+
+Logica
+
+2)
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int ano;
+    
+    printf("Insira o seu ano de nascimento: ");
+    scanf("%d", &ano);
+    
+  if (ano % 4 == 0 && (ano % 400 == 0 || ano % 100 != 0)) {
+    printf("\nAno bissexto.\n");
+  
+  }
+  
+  else {
+    printf("\nAno nao bissexto.\n");
+  
+  }
+
+    return 0;
+}
+

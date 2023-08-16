@@ -1,0 +1,20 @@
+Questão 2: Um cliente relata que está enfrentando lentidão em um determinado recurso do sistema. Como você abordaria esse problema para identificar a causa raiz e propor uma solução?
+
+Primeiramente verificar se há algum problema de lentidão do computador do usuário, em seguida verificar se mais algum cliente reportou o mesmo problema nessa rotina ou só aquele usuário específico, verificar com o time ou responsável do banco de dados para verificar se há algum lock no BD que possa estar acarretando este problema, verificar com time ou responsável se a máquina/servidor está com um alto uso de processamento na CPU e/ou de uso memória RAM. Para este problema seguiria esta ordem de abordagem, tentaria entender se foi realizado algum processo fora do normal nesta rotina que apresenta a lentidão, caso o problema esteja na máquina do usuário, solicitaria que o mesmo a reiniciasse e efetuasse a rotina novamente. Para os outros casos teria que trabalhar com os times responsáveis a fim de identificar o que pode estar acarretando nessa lentidão. Caso o sistema tenha uma ferramenta de monitoramento das sessões de cada usuário e os seus processos, iria utilizar a mesma para coletar informações para sanar o problema.
+
+
+Questão 3: Um usuário informa que está recebendo uma mensagem de erro ao tentar realizar uma operação específica no sistema. Explique como você investigaria esse problema e quais etapas seguiria para solucioná-lo.
+
+
+Conectaria na máquina do cliente, pediria que o mesmo me mostrasse a mensagem de erro, guardaria a mensagem, perguntaria se essa rotina é nova ou sempre funcionou, se houve alguma mudança nela. Pediria que o mesmo me mostrasse a rotina da operação que estivesse dando erro, passo a passo até o momento do erro, se for uma rotina de cadastro por exemplo iria solicitar um cadastro que deu certo para comparação, se existe algum dado que precise de um tratamento específico e tentaria corrigir. Realizaria o teste dessa rotina em base de homologação para ver se o erro se reproduziria. por último verificaria com alguém do time com mais experiência se ela já tinha vista aquele erro e se houve algum patch aplicado recentemente que possam estar impactando no erro, testaria em uma base de homologação sem o patch se fosse o caso a rotina e verificaria se a mesma funciona sem o erro. 
+
+
+
+Questão 4: Descreva como você lidaria com uma situação em que um usuário encontra um erro desconhecido.
+
+Solicitaria que o mesmo me mostrasse o erro e qual rotina e processo ele executou para que fosse apresentado o erro, iria tentar reproduzir em uma base de homologação, e tentaria analisar o erro, caso não achasse a solução iria buscar ajuda com um colega com mais experiência ou o meu superior, se pudessem me auxiliar nessa situação e tentar trabalhar juntos para achar a solução do problema.
+
+
+
+
+

@@ -1,0 +1,13 @@
+1)a)
+SELECT * FROM Atendimento
+WHERE cd_especialidade = 'Neurologia'
+AND data_atendimento BETWEEN CURDATE() - INTERVAL 6 MONTH  AND CURDATE();
+
+
+
+b)
+SELECT Pac.nome_paciente as NOME, Pro.descricao_prontuario as DESCRICAO, Ate.data_atendimento as DATAATENDIMENTO FROM Prontuario as Pro
+INNER JOIN Paciente as Pac ON Pac.id_paciente = Pro.id_paciente
+INNER JOIN Atendimento as Ate ON Ate.id_paciente = Pro.id_paciente AND Ate.id_atendimento = Pro.id_atendimento
+
+WHERE Pro.id_paciente = '123'
